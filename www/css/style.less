@@ -1,0 +1,87 @@
+//less
+@import (less) "css/font.less";
+//colors
+@color-green2: rgb(57,202,108);
+@color-metal:rgba(117, 149, 164,1.0);//background
+@color-metal-line:rgba(117, 149, 164,0.5);
+
+@font:"Source Sans Pro", sans-serif;
+//menu
+@menu-width:200px;
+@menu-header-height:65px;
+@menu-footer-height:30px;
+@menu-list-item-height:45px;
+
+//page
+@page-background-color:rgb(247, 247, 247);//like white
+@page-header-height:45px;
+@page-header-color:@color-green2;
+@page-header-text-color:@page-background-color;
+
+.page-background{
+	 	background-image: linear-gradient(#7595A4, #A4C0CE 47%, #486B7A);
+		background-image: -webkit-linear-gradient(#7595A4, #A4C0CE 47%, #486B7A);
+		background-image: -ms-linear-gradient(#7595A4, #A4C0CE 47%, #486B7A);
+}
+.page-left-shadown{
+	-webkit-box-shadow: -3px 0px 5px 0px rgba(100, 100, 100, 0.5);
+	-moz-box-shadow:    -3px 0px 5px 0px rgba(100, 100, 100, 0.5);
+	box-shadow:         -3px 0px 5px 0px rgba(100, 100, 100, 0.5);
+}
+.page-header-bottom-shadown{
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 0.5);
+	-moz-box-shadow:    0px 2px 5px 0px rgba(100, 100, 100, 0.5);
+	box-shadow:         0px 2px 5px 0px rgba(100, 100, 100, 0.5);
+}
+.translate-hide-element{
+	transform: translate3d(100%,0,0);
+	-webkit-transform: translate3d(100%,0,0);
+	-ms-transform: translate3d(100%,0,0);
+}
+
+html{
+margin:0;
+padding:0;
+overflow: hidden;
+-ms-touch-action:none;
+}
+
+body{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 0;
+	margin: 0;
+	font-family:@font;
+	font-weight: 300;
+	overflow: auto;
+	  -webkit-user-select: none;  /* Chrome all / Safari all ;  NOT SELECTABLE TEXT!!!*/ 
+	  -moz-user-select: none;     /* Firefox all */
+	  -ms-user-select: none;      /* IE 10+ */
+
+	    transform: translate3d(0,0,0);
+	    -webkit-transform: translate3d(0,0,0);
+	    -ms-transform: translate3d(0,0,0);
+
+	  	-webkit-tap-highlight-color: rgba(0,0,0,0); /*disable div highlith on touch*/
+	  	-ms-touch-action:none;
+	 text-align: center; 	
+}
+.central-container{
+	display: inline-block;
+
+}
+.page-header{
+	font-size: 20px;
+	font-weight: 400;
+}
+#myChart{
+	border: 1px solid black;
+}
+.subtitle{
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: underline;
+}

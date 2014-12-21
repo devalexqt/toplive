@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=mdpi" />
+
+        {#
+        {% include "./fragments/remote-debuger.swig" %}
+        #}
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/socket.io-1.1.0.js"></script>
+    <script src="js/standalone-framework.js"></script>
+    <!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+    <script src="js/highstock.js"></script>
+    <script src="js/exporting.js"></script>
+
+    
+  </head>
+
+  <body onload="initPage()">
+
+  <div class="central-container">
+          <div class="page-header">Live monitoring of CPU, RAM and process on remote machine.</div>
+          <input id="button_start_id" type="button" value="Start" onclick="startMonitoring(this)"></input>
+          <p/>
+          <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+          <!-- <div id="graphdiv"></div> -->
+          <div id="container" style="width:800px; height:480px;"></div>
+          <div class="subtitle">Per process utilization</div>
+          <div id="containerProcessCPU" style="width:800px; height:480px;"></div>
+          <div id="containerProcessRAM" style="width:800px; height:480px;"></div>
+
+
+  </div><!--central-container-->
+
+
+
+  </body>
+  </html>  

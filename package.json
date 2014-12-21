@@ -1,0 +1,14 @@
+{
+  "name": "toplive",
+  "version": "0.0.1",
+  "description": "A package for live PC monitoring usuing linux TOP command as input.",
+  "author": "Alex zeppelindev.com <devalexqt@gmail.com>",
+  "dependencies": {
+    "mime": ">= x.x.x",
+    "less": ">= x.x.x",
+    "swig": ">= x.x.x",
+    "socket.io": ">= x.x.x",
+    "topparser":"git://github.com/devalexqt/topparser.git"
+  },
+  "engine": "node 0.10.xx"
+}
