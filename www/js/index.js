@@ -320,6 +320,7 @@ function initSocket(){
     				}
     			var series=checkSeries(_chart,proc.pid)
     			if(!series){
+    				if(_val>0.0){
     				series={
     					yAxis:0,
     					name:_name,
@@ -329,8 +330,11 @@ function initSocket(){
     				}
     				series=_chart.addSeries(series,false)
     				series.pid=_pid
+    				}//if _val >0
     			}//if !series
+    			else{
     			series.addPoint(proc_data,false)
+    			}//else
     		}//insertProcessData
 
 	    	for(var i=0,proc=data.process[i];i<data.process.length;proc=data.process[++i]){	    		

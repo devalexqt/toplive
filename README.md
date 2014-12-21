@@ -9,7 +9,7 @@ git clone git://github.com/devalexqt/toplive.git
 cd toplive
 npm install
 ```
-Then run server:
+Then run server script:
 ```
 node server.js
 ```

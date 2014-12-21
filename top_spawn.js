@@ -26,7 +26,7 @@ exports.start=function(pid_limit,callback){
 		if(end==-1||end==start){return}
 		var data=_data.slice(start,end)
 			//console.dir(topparser.parse(data,3))
-			var result=topparser.parse(data,pid_limit)
+			var result=topparser.parse(data,null)
 				//result.time-=startTime
 				//result.time*=1000
 			if(callback){callback(null,result)}
