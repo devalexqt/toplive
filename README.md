@@ -9,12 +9,11 @@ This node module help You to monitoring server loading utilization in real time 
 # Usage
 
 ```
-git clone git://github.com/devalexqt/toplive.git
-cd toplive
-npm install
+npm install git://github.com/devalexqt/toplive.git
 ```
 Then run server script:
 ```
+cd toplive
 node server.js
 ```
 Now visit to http://same_ip:8081/ and click start button for monitoring in real time.
