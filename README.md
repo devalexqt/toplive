@@ -19,6 +19,8 @@ node server.js
 ```
 Now visit to http://same_ip:8081/ and click start button for monitoring in real time.
 
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=3.14pi@ukr.net&lc=US&no_note=0&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest&item_number=toplive)
+
 #Plots
 ![CPU and RAM Usage](/image/chart1.png "CPU and RAM usage in real time.")
 <br/>
